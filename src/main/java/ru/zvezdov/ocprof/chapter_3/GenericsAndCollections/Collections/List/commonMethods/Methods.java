@@ -1,6 +1,7 @@
 package ru.zvezdov.ocprof.chapter_3.GenericsAndCollections.Collections.List.commonMethods;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -21,5 +22,22 @@ public class Methods {
 //        String state = list.get(0); // RuntimeException
         int index = list.indexOf("NY");
         System.out.println(index);
+
+
+        list.add("adad");
+        list.add("adad");
+        list.add("adad");
+        list.add("adad");
+
+        Iterator<String> iterator = list.iterator();
+        while (iterator.hasNext()) {
+            String next = iterator.next();
+            System.out.println(next);
+        }
+
+
+
+
+
     }
 }
