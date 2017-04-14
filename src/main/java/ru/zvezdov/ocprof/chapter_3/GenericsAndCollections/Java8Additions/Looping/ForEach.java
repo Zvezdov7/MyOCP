@@ -1,4 +1,4 @@
-package ru.zvezdov.ocprof.chapter_3.GenericsAndCollections.Collections.ComparableVsComparator.Java8Additions.Looping;
+package ru.zvezdov.ocprof.chapter_3.GenericsAndCollections.Java8Additions.Looping;
 
 import java.util.Arrays;
 import java.util.List;

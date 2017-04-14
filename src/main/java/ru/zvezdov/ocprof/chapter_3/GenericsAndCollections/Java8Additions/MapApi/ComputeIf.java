@@ -1,4 +1,4 @@
-package ru.zvezdov.ocprof.chapter_3.GenericsAndCollections.Collections.ComparableVsComparator.Java8Additions.MapApi;
+package ru.zvezdov.ocprof.chapter_3.GenericsAndCollections.Java8Additions.MapApi;
 
 import java.util.HashMap;
 import java.util.Map;

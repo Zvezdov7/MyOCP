@@ -1,4 +1,4 @@
-package ru.zvezdov.ocprof.chapter_3.GenericsAndCollections.Collections.ComparableVsComparator.Java8Additions.MethodReferences;
+package ru.zvezdov.ocprof.chapter_3.GenericsAndCollections.Java8Additions.MethodReferences;
 
 import ru.zvezdov.ocprof.chapter_3.GenericsAndCollections.Collections.ComparableVsComparator.Comparator.Duck;
 

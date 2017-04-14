@@ -1,4 +1,4 @@
-package ru.zvezdov.ocprof.chapter_3.GenericsAndCollections.Collections.ComparableVsComparator.Java8Additions.UpdatingAllElements;
+package ru.zvezdov.ocprof.chapter_3.GenericsAndCollections.Java8Additions.UpdatingAllElements;
 
 import java.util.Arrays;
 import java.util.List;

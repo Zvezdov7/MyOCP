@@ -1,4 +1,4 @@
-package ru.zvezdov.ocprof.chapter_3.GenericsAndCollections.Collections.ComparableVsComparator.Java8Additions.RemovingConditionally;
+package ru.zvezdov.ocprof.chapter_3.GenericsAndCollections.Java8Additions.RemovingConditionally;
 
 import java.util.ArrayList;
 import java.util.List;
