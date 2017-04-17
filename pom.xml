@@ -13,8 +13,14 @@
         <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
     </properties>
 
-
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -24,6 +30,15 @@
                     <source>1.8</source>
                     <target>1.8</target>
                     <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <!--<exclude>my-config.properties</exclude>-->
+                    </excludes>
                 </configuration>
             </plugin>
         </plugins>
