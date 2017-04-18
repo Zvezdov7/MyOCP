@@ -24,7 +24,6 @@ public class FormatterApi {
         System.out.println(shortDateTime.format(dateTime));
         System.out.println(shortDateTime.format(date));
 
-
         System.out.println(dateTime.format(shortDateTime));
         System.out.println(date.format(shortDateTime));
 

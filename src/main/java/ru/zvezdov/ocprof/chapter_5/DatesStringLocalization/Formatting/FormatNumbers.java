@@ -26,6 +26,12 @@ public class FormatNumbers {
         NumberFormat en = NumberFormat.getInstance(Locale.US);
         NumberFormat fr = NumberFormat.getInstance(Locale.FRANCE);
 
+
+        Double dollar = 15.0;
+        Locale locale1 = Locale.US;
+        NumberFormat format = NumberFormat.getCurrencyInstance(locale1);
+        System.out.println(format.format(dollar));
+
         try {
             String s = "40.45";
             System.out.println(en.parse(s));
