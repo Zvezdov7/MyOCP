@@ -9,4 +9,9 @@ public class Lion extends AbstractCat {
     void clean() throws RuntimeException{
 
     }
+
+    @Override
+    public void sayMeow() {
+
+    }
 }

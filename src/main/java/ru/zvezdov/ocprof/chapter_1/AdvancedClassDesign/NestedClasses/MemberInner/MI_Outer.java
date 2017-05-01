@@ -33,8 +33,6 @@ public class MI_Outer {
     }
 
     public static void main(String[] args) {
-
-
         MI_Outer outer = new MI_Outer();
 
 //        outer.callInner();

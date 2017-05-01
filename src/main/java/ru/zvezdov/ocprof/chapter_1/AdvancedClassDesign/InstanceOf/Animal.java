@@ -1,5 +1,6 @@
 package ru.zvezdov.ocprof.chapter_1.AdvancedClassDesign.InstanceOf;
 
+
 /**
  * @author Dmitry Zvezdov
  *         07.04.17.

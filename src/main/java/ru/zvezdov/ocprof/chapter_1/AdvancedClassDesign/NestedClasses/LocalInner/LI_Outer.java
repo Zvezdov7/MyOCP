@@ -18,9 +18,11 @@ package ru.zvezdov.ocprof.chapter_1.AdvancedClassDesign.NestedClasses.LocalInner
 public class LI_Outer {
     private int length = 5;
     public void calculate(){
-        final int width = 20;
+        int width = 20;
         class Inner {
+            int x = LI_Outer.this.length;
             public void multiply(){
+                x = length;
                 System.out.println(length * width);
             }
         }
@@ -52,5 +54,4 @@ public class LI_Outer {
         class Inner{ }
         four = 5;
     }
-
 }

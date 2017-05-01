@@ -18,6 +18,7 @@ package ru.zvezdov.ocprof.chapter_1.AdvancedClassDesign.NestedClasses.StaticNest
  *         ONLY STATIC INNER CLASS CAN DECLARE STATIC METHODS
  */
 public class SN_Outer {
+    static  abstract class llala{}
     static class Nested{
         private int price = 6;
     }

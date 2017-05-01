@@ -1,5 +1,10 @@
 package ru.zvezdov.ocprof.chapter_3.GenericsAndCollections.Generics.GenericClasses;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
 /**
  * @author Dmitry Zvezdov
  *         11.04.17.
@@ -18,8 +23,19 @@ public class Crate<T> {
         return contents;
     }
 
+    public Crate() {
+    }
+
+    public Crate(T contents) {
+        this.contents = contents;
+    }
+
     public void packCrate(T contents){
         this.contents = contents;
     }
 
+    public static void main(String[] args) {
+
+    }
 }
+

@@ -19,7 +19,6 @@ public class Methods {
         for (Integer integer : hashSet) {
             System.out.println(integer);
         }
-
         Set<Integer> treeSet = new TreeSet<>();
         System.out.println(treeSet.add(66));
         System.out.println(treeSet.add(10));

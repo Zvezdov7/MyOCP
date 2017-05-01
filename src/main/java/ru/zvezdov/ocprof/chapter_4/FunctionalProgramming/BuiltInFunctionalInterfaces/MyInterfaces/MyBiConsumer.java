@@ -1,0 +1,9 @@
+package ru.zvezdov.ocprof.chapter_4.FunctionalProgramming.BuiltInFunctionalInterfaces.MyInterfaces;
+
+/**
+ * @author Dmitry Zvezdov
+ *         27.04.17.
+ */
+public interface MyBiConsumer<T, U> {
+    void accept(T t, U u);
+}

@@ -11,6 +11,7 @@ package ru.zvezdov.ocprof.chapter_1.AdvancedClassDesign.NestedClasses.AnonymousI
  *
  */
 public class AI_Outer {
+    int kk = 3;
 
 //    abstract class SaleTodayOnly{
 //        abstract int dollarsOff();
@@ -32,12 +33,19 @@ public class AI_Outer {
     }
 
     public int pay(){
+        int l = 3;
         return admission(5, new SaleTodayOnly() {
+            int l = 2;
             @Override
             public int dollarsOff() {
-                return 3;
+                return kk;
             }
         });
+    }
+
+    public static void main(String[] args) {
+        AI_Outer outer = new AI_Outer();
+        System.out.println(outer.pay());
     }
 
 

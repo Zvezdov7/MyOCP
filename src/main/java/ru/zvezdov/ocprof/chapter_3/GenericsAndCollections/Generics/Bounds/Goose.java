@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 /**
  * @author Dmitry Zvezdov
@@ -25,7 +26,11 @@ public class Goose implements Flyer {
 //        new Goose().groupOfFlyers(new ArrayList<Object>());
         new Goose().groupOfFlyers(new ArrayList<Goose>());
 
-        List<? extends Number> list = new ArrayList<Integer>();
+//        List<?> list = new ArrayList<String>();
+//        List<Number> list = new ArrayList<Integer>();
+        List<? super Number> list = new ArrayList<Object>();
+
+        List<? extends Number> list1 = new ArrayList<Integer>();
 
 
 

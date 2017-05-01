@@ -12,7 +12,7 @@ public class Methods {
 
         /**
          * LIFO - offer/peek/poll
-         * FIFO - push/peel/poll
+         * FIFO - push/peek/poll
          */
         Queue<Integer> queue = new ArrayDeque<>();
         System.out.println(queue.offer(10)); // { -> 10 -> }
