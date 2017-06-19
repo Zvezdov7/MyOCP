@@ -16,9 +16,8 @@ public class Reduce {
         }
         System.out.println(result);
 
-
         Stream<String> stringStream = Stream.of("W", "h", "a", "t", "'", "s", " up?");
-        final String reduce = stringStream.reduce("", (s, c) -> s + c);
+        final String reduce = stringStream.reduce("", (s, c) -> 2 > 1 ? s : c );
         System.out.println(reduce);
 
         Stream<Integer> stream = Stream.of(3, 5, 6);

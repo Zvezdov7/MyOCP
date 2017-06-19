@@ -4,8 +4,11 @@ package ru.zvezdov.ocprof.chapter_1.AdvancedClassDesign.Enums;
  * @author Dmitry Zvezdov
  *         07.04.17.
  */
-public enum OnlyOne {
-    ONCE(true);
+public enum OnlyOne  {
+    ONCE(true), TWICE;
+
+    OnlyOne() {
+    }
 
     OnlyOne(boolean b) {
         System.out.println("constructing");

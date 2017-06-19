@@ -9,6 +9,7 @@ import java.util.Locale;
  */
 public class LocaleApi {
     public static void main(String[] args) {
+//        Locale.setDefault(new Locale("En", "en"));
         final Locale locale = Locale.getDefault();
         System.out.println(locale);
 
@@ -32,3 +33,4 @@ public class LocaleApi {
 
     }
 }
+

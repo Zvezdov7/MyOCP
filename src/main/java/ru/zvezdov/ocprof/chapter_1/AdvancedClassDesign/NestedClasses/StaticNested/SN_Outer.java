@@ -26,5 +26,12 @@ public class SN_Outer {
     public static void main(String[] args) {
         Nested nested = new Nested();
         System.out.println(nested.price);
+
+        Nested nested1 = new SN_Outer.Nested();
+    }
+}
+class someClass {
+    void m() {
+        new SN_Outer.Nested();
     }
 }

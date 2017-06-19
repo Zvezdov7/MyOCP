@@ -17,12 +17,12 @@ public class Practice2 {
 
 //        stream.forEach(System.out::println);
         Stream<Integer> stream2 = stream.mapToObj(a -> a);
-        System.out.println(stream2.count());
+//        System.out.println(stream2.count());
+        stream2.forEach(a->a++);
+        stream2.forEach(System.out::println);
 
 //        stream.parallel().forEach(System.out::println);
 //        stream1.limit(5).forEach(System.out::println);
-
-
 
 
 

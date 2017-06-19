@@ -1,5 +1,7 @@
 package ru.zvezdov.ocprof.chapter_1.AdvancedClassDesign.NestedClasses.LocalInner;
 
+
+
 /**
  * @author Dmitry Zvezdov
  *         10.04.17.
@@ -17,9 +19,14 @@ package ru.zvezdov.ocprof.chapter_1.AdvancedClassDesign.NestedClasses.LocalInner
  */
 public class LI_Outer {
     private int length = 5;
+
+    class Oinner{
+    }
+
+
     public void calculate(){
         int width = 20;
-        class Inner {
+        class Inner extends Oinner  {
             int x = LI_Outer.this.length;
             public void multiply(){
                 x = length;

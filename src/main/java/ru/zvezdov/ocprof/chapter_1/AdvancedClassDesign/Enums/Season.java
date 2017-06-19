@@ -37,6 +37,7 @@ public enum Season {
     public void printHours(){};
 
 
+
 //    public abstract void someMethod(); // Will compile if and only if all enum values overrides this method
 }
 //class SomeClass extends Season{} // NOT COMPILE - can't extend any Enum

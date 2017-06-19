@@ -1,5 +1,7 @@
 package ru.zvezdov.ocprof.chapter_6.ExceptionsAndAssertions.Assertions;
 
+import java.util.LinkedList;
+
 /**
  * @author Dmitry Zvezdov
  *         17.04.17.

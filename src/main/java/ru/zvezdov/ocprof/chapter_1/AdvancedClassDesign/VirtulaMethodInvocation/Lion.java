@@ -4,7 +4,7 @@ package ru.zvezdov.ocprof.chapter_1.AdvancedClassDesign.VirtulaMethodInvocation;
  * @author Dmitry Zvezdov
  *         07.04.17.
  */
-public class Lion extends AbstractAnimal {
+public class Lion extends ru.zvezdov.ocprof.chapter_1.AdvancedClassDesign.VirtulaMethodInvocation.AbstractAnimal {
 
     String name = "Leo";
 

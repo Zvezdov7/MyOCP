@@ -15,7 +15,10 @@ public class AddData {
         try {
             service = Executors.newSingleThreadExecutor();
             Future<Integer> result = service.submit(() -> 30+11);
-            System.out.println(result.get());
+            if (result.isDone()) {
+                System.out.println("Done");
+                System.out.println(result.get());
+            }
 
             service.submit(() -> {Thread.sleep(1000); return null;});
 //            service.submit(() -> {Thread.sleep(1000);}); //Doesn't compile

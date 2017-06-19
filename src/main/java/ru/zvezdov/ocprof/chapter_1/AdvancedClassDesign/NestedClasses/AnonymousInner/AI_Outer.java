@@ -1,5 +1,7 @@
 package ru.zvezdov.ocprof.chapter_1.AdvancedClassDesign.NestedClasses.AnonymousInner;
 
+import java.io.IOException;
+
 /**
  * @author Dmitry Zvezdov
  *         10.04.17.
@@ -21,6 +23,21 @@ public class AI_Outer {
         int dollarsOff();
     }
 
+    abstract class AbstractInnerClass{
+        int kk;
+
+        public AbstractInnerClass() {
+        }
+
+        public AbstractInnerClass(int i) {
+            kk = i;
+        }
+    }
+
+    public void printKK(AbstractInnerClass abstractInnerClass){
+        System.out.println(abstractInnerClass.kk);
+    }
+
     public int admission(int basePrice, SaleTodayOnly sale){
 
 //        SaleTodayOnly sale = new SaleTodayOnly() {
@@ -34,6 +51,7 @@ public class AI_Outer {
 
     public int pay(){
         int l = 3;
+
         return admission(5, new SaleTodayOnly() {
             int l = 2;
             @Override
@@ -46,6 +64,35 @@ public class AI_Outer {
     public static void main(String[] args) {
         AI_Outer outer = new AI_Outer();
         System.out.println(outer.pay());
+
+        outer.printKK(outer.new AbstractInnerClass() {
+
+            public static final int aa = 12;
+            @Override
+            public int hashCode() {
+                return super.hashCode();
+            }
+
+            @Override
+            public boolean equals(Object obj) {
+                return super.equals(obj);
+            }
+
+            @Override
+            protected Object clone() throws CloneNotSupportedException {
+                return super.clone();
+            }
+
+            @Override
+            public String toString() {
+                return super.toString();
+            }
+
+            @Override
+            protected void finalize() throws Throwable {
+                super.finalize();
+            }
+        });
     }
 
 

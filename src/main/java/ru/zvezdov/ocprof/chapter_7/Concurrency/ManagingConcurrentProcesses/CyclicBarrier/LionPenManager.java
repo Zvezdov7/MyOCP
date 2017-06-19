@@ -26,6 +26,8 @@ public class LionPenManager {
     public void performTask(CyclicBarrier c1, CyclicBarrier c2){
         try {
             removeAnimals();
+            System.out.println("Number of waiting threads " + c1.getNumberWaiting());
+            System.out.println("Number of threads to get the barier " + c1.getParties());
             c1.await();
             cleanPen();
             c2.await();
@@ -43,8 +45,11 @@ public class LionPenManager {
             CyclicBarrier c2 = new CyclicBarrier(4, () -> System.out.println("*** Pen Cleaned!"));
             LionPenManager manager = new LionPenManager();
             for (int i = 0; i < 4; i++) {
+                Thread.sleep(100);
                 service.submit(() -> manager.performTask(c1, c2));
             }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         } finally {
             if (service != null) service.shutdown();
         }

@@ -1,6 +1,7 @@
 package ru.zvezdov.ocprof.chapter_3.GenericsAndCollections.Collections.Queue.commonMethods;
 
 import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
  * @author Dmitry Zvezdov
@@ -8,10 +9,11 @@ import java.util.ArrayDeque;
  */
 public class Deq {
     public static void main(String[] args) {
-        ArrayDeque<String> arrayDeque = new ArrayDeque<>();
+        Deque<String> arrayDeque = new ArrayDeque<>();
         arrayDeque.offer("a");
         arrayDeque.offer("b");
         arrayDeque.push("c");
+        System.out.println(arrayDeque.remove());
         System.out.println(arrayDeque.pollFirst());
 
     }

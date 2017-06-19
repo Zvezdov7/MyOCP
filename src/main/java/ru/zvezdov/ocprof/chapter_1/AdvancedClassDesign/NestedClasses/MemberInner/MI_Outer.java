@@ -15,10 +15,11 @@ package ru.zvezdov.ocprof.chapter_1.AdvancedClassDesign.NestedClasses.MemberInne
  *
  *
  */
+
 public class MI_Outer {
     private String greeting = "Hello";
 
-    protected class Inner {
+    public class Inner {
         public int repeat = 3;
         public void go(){
             for(int i =0; i < repeat; i++){

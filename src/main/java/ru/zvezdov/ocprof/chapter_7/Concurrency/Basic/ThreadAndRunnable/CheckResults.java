@@ -9,14 +9,13 @@ public class CheckResults {
 
     public static void main(String[] args) throws InterruptedException {
         new Thread(() -> {
-            for (int i = 0; i < 500; i++) {
+            for (int i = 0; i < 50000; i++) {
                 CheckResults.counter++;
             }
         }).start();
 
-        while (CheckResults.counter<100){
+        while (CheckResults.counter<49000){
             System.out.println("Not reached yet");
-            Thread.sleep(100);
         }
         System.out.println("Reached");
     }

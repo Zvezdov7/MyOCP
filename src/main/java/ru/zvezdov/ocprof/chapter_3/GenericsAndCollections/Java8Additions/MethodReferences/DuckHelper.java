@@ -2,11 +2,9 @@ package ru.zvezdov.ocprof.chapter_3.GenericsAndCollections.Java8Additions.Method
 
 import ru.zvezdov.ocprof.chapter_3.GenericsAndCollections.Collections.ComparableVsComparator.Comparator.Duck;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
@@ -20,6 +18,13 @@ import java.util.function.Supplier;
  *
  */
 public class DuckHelper {
+    public DuckHelper() {
+    }
+
+    public DuckHelper(int i){
+
+    }
+
     public static int compareByWeight(Duck d1, Duck d2){
         return d1.getWeight() - d2.getWeight();
     }
@@ -44,6 +49,16 @@ public class DuckHelper {
 
         Supplier<ArrayList> methodRef4 = ArrayList::new;
         Supplier<ArrayList> lambda4 = () -> new ArrayList();
+
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(1);
+
+        Predicate<Integer> predicate = (l) -> list.isEmpty();
+//        Predicate<Integer> predicate1 = list::isEmpty;
+
+
+        Function<Integer, DuckHelper> lambda5 = s -> new DuckHelper(s);
+        Function<Integer, DuckHelper> methodRef5 = DuckHelper::new;
 
     }
 }

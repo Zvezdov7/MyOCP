@@ -12,7 +12,19 @@ public class PrintData implements Runnable {
         }
     }
 
-    public static void main(String[] args) {
-        new Thread(new PrintData()).start();
+    public static void main(String[] args) throws InterruptedException {
+        Thread thread = new Thread(new PrintData());
+        thread.start();
+//        thread.sleep(100);
+
+        System.out.println(thread.getId());
+        System.out.println(thread.getName());
+        System.out.println(thread.getPriority());
+        System.out.println(thread.isAlive());
+        System.out.println(thread.isDaemon());
+
+//        Thread.currentThread().join();// Deadlock
+
+
     }
 }
