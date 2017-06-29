@@ -17,7 +17,7 @@ import java.util.TreeSet;
  *         S, U, V, and so forth for multiple generic types
  *
  */
-public class Crate<T> {
+public class Crate<T extends Number> {
     private T contents;
     public T emptyCrate(){
         return contents;
@@ -35,7 +35,6 @@ public class Crate<T> {
     }
 
     public static void main(String[] args) {
-
     }
 }
 

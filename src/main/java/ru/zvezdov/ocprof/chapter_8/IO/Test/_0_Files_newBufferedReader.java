@@ -2,6 +2,7 @@ package ru.zvezdov.ocprof.chapter_8.IO.Test;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -15,7 +16,8 @@ public class _0_Files_newBufferedReader {
     public static void main(String[] args) {
         Path path = Paths.get("/Users", "Zvezdov", "Desktop", "Hii");
 
-        try (BufferedReader reader = Files.newBufferedReader(path)) {
+        try (BufferedReader reader = Files.newBufferedReader(path);
+             FileInputStream f = new FileInputStream("")) {
             while (reader.ready()) {
                 System.out.println(reader.readLine());
             }

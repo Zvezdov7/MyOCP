@@ -8,8 +8,9 @@ import java.util.LinkedList;
  */
 public class Assertions {
     public static void main(String[] args) {
-        int numGuests = 5;
-        assert numGuests > 0: "Aaaaaaah";
+        int numGuests = -1;
+        boolean bal = true;
+        assert numGuests > 0: bal;
         System.out.println(numGuests);
     }
 }

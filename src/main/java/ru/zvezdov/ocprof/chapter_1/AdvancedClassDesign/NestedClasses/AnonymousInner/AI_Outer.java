@@ -19,6 +19,9 @@ public class AI_Outer {
 //        abstract int dollarsOff();
 //    }
 
+    class InnerI {
+         static final int m = 20;
+    }
     interface SaleTodayOnly{
         int dollarsOff();
     }
@@ -64,7 +67,6 @@ public class AI_Outer {
     public static void main(String[] args) {
         AI_Outer outer = new AI_Outer();
         System.out.println(outer.pay());
-
         outer.printKK(outer.new AbstractInnerClass() {
 
             public static final int aa = 12;

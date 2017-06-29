@@ -9,8 +9,8 @@ import java.nio.file.Paths;
  */
 public class _0_Relativize {
     public static void main(String[] args) {
-        Path path1 = Paths.get("Users/Zvezdov");
-        Path path2 = Paths.get("EsbLoggingGui");
+        Path path1 = Paths.get("c:\\Users\\Zvezdov");
+        Path path2 = Paths.get("c:\\EsbLoggingGui");
         Path path3 = path1.relativize(path2);
         System.out.println(path3);
     }

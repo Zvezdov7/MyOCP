@@ -18,7 +18,7 @@ public class _0_StreamApi_collect {
 
         list.stream().collect(Collectors.toList());
         list.stream().collect(Collectors.toSet());
-        list.stream().collect(Collectors.toMap(p -> p.getName(), t -> t.getNumber()));
+        list.stream().collect(Collectors.toMap(Item::getName, Item::getNumber));
         list.stream().collect(Collectors.toCollection(ArrayList::new));
         list.stream().collect(Collectors.toCollection(HashSet::new));
 //        list.stream().collect(Collectors.toCollection(TreeSet::new));

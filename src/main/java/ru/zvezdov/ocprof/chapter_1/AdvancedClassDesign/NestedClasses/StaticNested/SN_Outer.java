@@ -19,7 +19,9 @@ package ru.zvezdov.ocprof.chapter_1.AdvancedClassDesign.NestedClasses.StaticNest
  */
 public class SN_Outer {
     static  abstract class llala{}
-    static class Nested{
+    static class NestedPareny{}
+    static class Nested extends NestedPareny{
+        class InInner {}
         private int price = 6;
     }
 
